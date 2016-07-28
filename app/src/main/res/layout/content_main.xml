@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="clm.changesentence.MainActivity"
+    tools:showIn="@layout/activity_main"
+
+    android:id="@+id/mainLO"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="clm.changesentence.LoginFragment"
+            android:id="@+id/fragment" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="30sp"
+        android:text="Hello World!"
+        android:textColor="#0f0f0f"
+        android:layout_weight=".9" />
+
+</LinearLayout>
